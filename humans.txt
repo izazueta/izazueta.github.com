@@ -1,5 +1,5 @@
 /* TEAM */
-	Me: Iván Zazueta Acosta
+	Me: Iv&aacute;n Zazueta Acosta
   Site: http://ivanzazueta.com
 	Twitter: @izazueta
 	From: Morelos, México
