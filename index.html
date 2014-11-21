@@ -1,3 +1,7 @@
+<!-- =================================================================
+	 Basado en particles.js de http://vincentgarreau.com/particles.js/
+	 =================================================================
+-->
 <!DOCTYPE html>
 <html lang="es-MX">
 	<head>
@@ -5,12 +9,60 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 		<link rel="author" href="humans.txt" />
-		<meta name="author" content="Iván Zazueta" />
+		<meta name="author" content="Iván Zazueta Acosta" />
 		<meta name="robots" content="all" />
-		<meta name="description" content="Hola soy Iván Zazueta, ingeniero especializado en el desarrollo de proyectos de TI. Actualmente trabajo en el Instituto Mexicano de Tecnología del Agua como asistente técnico en la Subcoordinación de Gestión Integrada del Agua." />
+		<meta name="description" content="Hola soy Iván Zazueta, ingeniero especializado en el desarrollo de software." />
 
 		<title>Iván Zazueta Acosta</title>
 		<link href="//plus.google.com/108050631529573341434" rel="author">
+		<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<style>
+			html, body {
+				font-family: 'Open Sans', sans-serif;
+				color: #34495e;
+				background-color: #e74c3c;
+				width: 100%;
+				height: 100%;
+			}
+			h1, h3{
+				margin: 0;
+			}
+			a {
+				color: #34495e;
+				text-decoration: none;
+			}
+			ul {
+			    list-style-type: none;
+			}
+			li {
+				margin-bottom: 10px;
+			}
+			img {
+				margin-bottom: -10px;
+			}
+			.panel {
+				position: absolute;
+				z-index: 10;
+				background: #ecf0f1;
+				top: 50%;
+				left: 50%;
+				margin: -200px 0 0 -150px;
+				padding: 20px;
+				border-radius: 4px;
+				box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.75);
+			}
+			canvas{
+				display:block;
+				vertical-align:bottom;
+			}
+			#particles-js{
+			  height:100%;
+			  width:100%;
+			}
+		</style>
 
 		<script>
 			var _prum = [['id', '51b0c3a2abe53dfd61000000'],
@@ -26,22 +78,162 @@
 	</head>
 
 	<body>
-		<h1>Migrando...</h1>
-		<p>Mientras tanto, puedes contactarme en:</p>
-		<ul>
-			<li><a href="//about.me/ivanzazueta" title="Mi perfil en About.me">About.me</a></li>
-			<li><a href="//www.facebook.com/IvanZazuetaMX" title="Mi página en Facebook">Facebook</a></li>
-			<li><a href="//twitter.com/izazueta" title="Twitter">@izazueta</a></li>
-			<li><a href="//mx.linkedin.com/in/ivanzazueta" title="Mi perfil en LinkedIn">LinkedIn</a></li>
-			<li><a href="//plus.google.com/108050631529573341434" title="Mi perfil en Google+">Google+</a></li>
-			<li><a href='https://alpha.app.net/izazueta' rel='me'>App.net</a></li>
-		</ul>
+		<div class="panel">
+			<h1>Iván Zazueta Acosta</h1>
+			<h3>Software engineer and others things :)</h3>
+			<ul>
+				<li><a href="//github.com/izazueta" title="Github"><img src="img/Github.png">&nbsp;Github</a></li>
+				<li><a href="//twitter.com/izazueta" title="Twitter"><img src="img/Twitter.png">&nbsp;@izazueta</a></li>
+				<li><a href="//mx.linkedin.com/in/ivanzazueta" title="Mi perfil en LinkedIn"><img src="img/Linkedin.png">&nbsp;LinkedIn</a></li>
+				<li><a href="//plus.google.com/108050631529573341434" title="Mi perfil en Google+"><img src="img/Google.png">&nbsp;Google+</a></li>
+				<li><a href='//www.lastfm.es/user/navidrc' title="Last.fm"><img src="img/LastFM.png">&nbsp;LastFM</a></li>
+				<li><a href='//alpha.app.net/izazueta' rel='me'><img src="img/Others.png">&nbsp;App.net</a></li>
+				<li><a href="//about.me/ivanzazueta" title="About.me"><img src="img/Others.png">&nbsp;About.me</a></li>
+			</ul>
+		</div>
+		<div id="particles-js"></div>
 
-			<script>
-				var _gaq=[['_setAccount','UA-23899186-1'],['_trackPageview']];
-				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-				g.src='//www.google-analytics.com/ga.js';
-				s.parentNode.insertBefore(g,s)}(document,'script'));
-			</script>
+		<script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+		<script>
+		/* DESKTOP */
+		function pJS_desktop(){
+		  particlesJS('particles-js', {
+		    particles: {
+		      color: '#fff',
+		      shape: 'circle',
+		      opacity: 1,
+		      size: 2.5,
+		      size_random: true,
+		      nb: 150,
+		      line_linked: {
+		        enable_auto: true,
+		        distance: 250,
+		        color: '#fff',
+		        opacity: 0.5,
+		        width: 1,
+		        condensed_mode: {
+		            enable: false,
+		            rotateX: 600,
+		            rotateY: 600
+		        }
+		      },
+		      anim: {
+		        enable: true,
+		        speed: 5
+		      }
+		    },
+		    interactivity: {
+		      enable: true,
+		      mouse: {
+		        distance: 200
+		      },
+		      detect_on: 'canvas',
+		      mode: 'grab',
+		      line_linked: {
+		        opacity: .5
+		      },
+		      events: {
+		        onclick: {
+		          enable: true,
+		          mode: 'push',
+		          nb: 4
+		        }
+		      }
+		    },
+		    retina_detect: true
+		  });
+		}
+
+
+
+		/* MOBILE / TABLET */
+
+		function pJS_mobile(){
+		  particlesJS('particles-js', {
+		    particles: {
+		      color: '#fff',
+		      shape: 'circle',
+		      opacity: 1,
+		      size: 2.5,
+		      size_random: true,
+		      nb: 40,
+		      line_linked: {
+		        enable_auto: false,
+		        distance: 250,
+		        color: '#fff',
+		        opacity: 0.5,
+		        width: 1,
+		        condensed_mode: {
+		            enable: false,
+		            rotateX: 600,
+		            rotateY: 600
+		        }
+		      },
+		      anim: {
+		        enable: true,
+		        speed: 3
+		      }
+		    },
+		    interactivity: {
+		      enable: false,
+		      mouse: {
+		        distance: 200
+		      },
+		      detect_on: 'canvas',
+		      mode: 'grab',
+		      line_linked: {
+		        opacity: .5
+		      },
+		      events: {
+		        onclick: {
+		          enable: true,
+		          mode: 'push',
+		          nb: 4
+		        }
+		      }
+		    },
+		    retina_detect: true
+		  });
+		}
+
+
+		/* LAUNCH */
+
+		if(window.innerWidth > 1100){
+		  pJS_desktop();
+		}else{
+		  pJS_mobile();
+		}
+
+		/* on resize */
+
+		window.addEventListener('resize', function() {
+		  checkOnResize();
+		}, true);
+
+		function checkOnResize(){
+		  if(window.innerWidth > 1100){
+		    if(pJS.particles.nb != 150){
+		      console.log('desktop mode')
+		      pJS.fn.vendors.destroy();
+		      pJS_desktop();
+		    }
+		  }else{
+		    if(pJS.particles.nb == 150){
+		      console.log('mobile mode');
+		      pJS.fn.vendors.destroy();
+		      pJS_mobile();
+		    }
+		  }
+		}
+		</script>
+
+
+		<script>
+			var _gaq=[['_setAccount','UA-23899186-1'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
 	</body>
 </html>
